@@ -1,6 +1,5 @@
 * {
     font-size: 62.5%;
-    background: white;
     text-decoration: none;
 }
 html{
@@ -15,7 +14,10 @@ body {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #000;
+    background-image: url(/assets/images/background.png);
+    overflow: hidden;
+    animation: float-side 15s ease-in-out infinite;
+
 }
 
 /*--------Nav-Bar----------*/
@@ -83,6 +85,81 @@ body {
     background-color:rgba(250, 250, 250, 0.89);
     transition: 1s;
 
+}
+/* ----Main content ------*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+}
+
+
+.hidden-text{
+    display: none;
+}
+.button-right a,
+.button-left a{
+
+    background-color: transparent;
+    opacity: .5;
+    width: 64px;
+    height: 64px;
+     
+}
+.button-right{
+    margin-right: .7rem;
+}
+.button-left{
+    margin-left: 2rem;
+}
+
+
+.button-left a:hover {
+    opacity: 1;
+}
+.button-right a:hover{
+    opacity: 1;
+}
+
+
+#about a img{
+    margin-top: 10rem;
+    width: 50rem;
+    height: 40rem;
+    animation: float 2s ease-in-out infinite;
+    box-shadow:0 0 25px 25px rgba(255, 253, 253, 0.5);
+
+    perspective: 1000px;
+}
+
+#robot{
+    position: absolute;
+    left: 80px;
+    bottom: -100px;
+    animation: float-side 6s ease-in-out infinite;
+
+}
+#robot img{
+    width: 30rem;
+    height:32rem;
+
+    z-index: 10;
+}
+
+#alien-ship {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    z-index: -10;
+    animation: pulse 6s ease-in-out infinite;
+
+}
+#alien-ship img{
+    width: 38rem;
+    height: 34rem;
+    z-index: -100;
 }
 
 
