@@ -1,25 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
     font-size: 62.5%;
     text-decoration: none;
+    font-family: 'Montserrat', arial, helvetica;
 }
 html{
     height: 100vh;
-    background-color: #000;
-
-}
+    width: auto;
+    }
 body {
     margin: 0;
     padding: 0;
     font-size: 5rem;
-    width: 100%;
+    width: auto;
     height: 100vh;
     box-sizing: border-box;
-    background-image: url(/assets/images/background.png);
     overflow: hidden;
-    animation: float-side 15s ease-in-out infinite;
+    background-image: linear-gradient( 112.1deg,  rgba(0,0,0,1) 50%, rgba(11,132,145,1) 100% );
 
 }
-
 /*--------Nav-Bar----------*/
 #nav-bar {
     display: flex;
@@ -27,10 +27,12 @@ body {
     box-sizing: border-box;
 
     width: 600px;
+   
 
     margin:0 auto;
     border-radius:  0 0 2rem 2rem;
-    Background-color: rgb(142, 1, 254);
+    background-color: rgba(10, 121, 133, .4)
+    
     
 }
 #nav-bar .central{
@@ -73,97 +75,71 @@ body {
     background-color:rgba(250, 250, 250, 0.89);
     transition: 1s;
     border-radius: 0 0 2rem 0;
+    color: rgba(10, 121, 133, .4);
 
 }
 #nav-bar .left:hover{
     background-color:rgba(250, 250, 250, 0.89);
     transition: 1s;
     border-radius: 0 0 0 2rem;
+    color: rgba(10, 121, 133, .4);
+
 
 }
 #nav-bar .central:hover{
     background-color:rgba(250, 250, 250, 0.89);
+    color: rgba(10, 121, 133, .4);
+
     transition: 1s;
 
 }
-/* ----Main content ------*/
 
-main {
+
+
+/*------------------Animation type-----------------------*/
+
+
+.container-text {
     display: flex;
-    justify-content: space-between;
+    margin: 4rem auto;
+    justify-content: center;
     align-items: center;
-    height: 90%;
-}
-
-
-.hidden-text{
-    display: none;
-}
-.button-right a,
-.button-left a{
-
-    background-color: transparent;
-    opacity: .5;
-    width: 64px;
-    height: 64px;
-     
-}
-.button-right{
-    margin-right: .7rem;
-}
-.button-left{
-    margin-left: 2rem;
-}
-
-
-.button-left a:hover {
-    opacity: 1;
-}
-.button-right a:hover{
-    opacity: 1;
-}
-
-
-#about a img{
-    margin-top: 10rem;
-    width: 50rem;
-    height: 40rem;
-    animation: float 2s ease-in-out infinite;
-    box-shadow:0 0 25px 25px rgba(255, 253, 253, 0.5);
-
-    perspective: 1000px;
-}
-
-#robot{
+    z-index: 100;
     position: absolute;
-    left: 80px;
-    bottom: -100px;
-    animation: float-side 6s ease-in-out infinite;
-
-}
-#robot img{
-    width: 30rem;
-    height:32rem;
-
-    z-index: 10;
-}
-
-#alien-ship {
-    position: absolute;
-    right: 30px;
-    top: 0;
-    z-index: -10;
-    animation: pulse 6s ease-in-out infinite;
-
-}
-#alien-ship img{
-    width: 38rem;
-    height: 34rem;
-    z-index: -100;
-}
-
-
-
+    right: 42%;
+    top: 67%;
+  }
+  .container-text p {
+    color:rgba(250, 250, 250, 0.89);
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container-text p span.typed-text {
+      font-size: 3rem;
+    font-weight: normal;
+    color: #0A7985;
+  }
+  .container-text p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 5px;
+    animation: blink 1s infinite;
+  }
+  .container-text p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
 
 
 

@@ -1,0 +1,78 @@
+/* ----Main container ------*/
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    animation: float-background 15s ease-in-out infinite;
+
+}
+
+
+.hidden-text{
+    display: none;
+}
+.button-right a,
+.button-left a{
+
+    background-color: transparent;
+    opacity: .5;
+    width: 64px;
+    height: 64px;
+     
+}
+.button-right{
+    margin-right: .7rem;
+}
+.button-left{
+    margin-left: 2rem;
+}
+
+
+.button-left a:hover {
+    opacity: 1;
+    transition: .5s;
+}
+.button-right a:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+
+#about a img{
+    margin-top: 10rem;
+    width: 50rem;
+    height: 40rem;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+
+#robot{
+    position: absolute;
+    left: 80px;
+    bottom: -100px;
+    animation: float-robot 7s ease-in-out infinite;
+
+}
+#robot img{
+    width: 30rem;
+    height:32rem;
+
+    z-index: 10;
+}
+
+#alien-ship {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    z-index: -10;
+    animation: pulse 6s ease-in-out infinite;
+
+}
+#alien-ship img{
+    width: 38rem;
+    height: 34rem;
+    z-index: -100;
+}

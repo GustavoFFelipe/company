@@ -8,10 +8,13 @@
     <link rel="shortcut icon" href="/assets/images/icons8-aranha-64.png" type="image/x-icon">
         <!---Styles-->
     <link rel="stylesheet" href="/assets/styles/global.css">
-    <link rel="stylesheet" href="/ assets/styles/home.css">
+    <link rel="stylesheet" href="/assets/styles/home.css">
     <link rel="stylesheet" href="/assets/styles/animation.css">
 
-
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Train+One&display=swap" rel="stylesheet">
 
     <title>Anansi | Gustavo</title>
 </head>
@@ -23,13 +26,13 @@
         <a href=""class="right">Contato</a>
     </nav>
 
-    <main>
+    <main id="main-container">
         <!--Side Button-->
         <div class="button-left">
             
             <a href="">
                 <h4 class="hidden-text">Portfólio</h4>
-                <img src="/assets/images/arrow-left.png" alt="Link portfolio">
+                <img src="/assets/images/arrow-left.png" alt="Link portfolio" style="color: white">
             </a>
 
         </div>
@@ -37,6 +40,10 @@
         <div id="about">
             
             <a href=""><img src="/assets/images/earth.png" alt="Planet Earth"></a>
+            <div class="container-text">
+                <p>Sobre <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+              <script src="/scripts/script.js"></script>
         </div>
 
         <!--Side Button-->
@@ -54,5 +61,9 @@
         </div>
 
     </main>
+
+    <div id="bottom-container">
+
+    </div>
 </body>
 </html>
