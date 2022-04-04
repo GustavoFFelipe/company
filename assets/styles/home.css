@@ -4,8 +4,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90%;
-    animation: float-background 15s ease-in-out infinite;
+    height: 100vh;
+    animation: float-side 7s ease-in-out infinite;
 
 }
 
@@ -15,15 +15,20 @@ main {
 }
 .button-right a,
 .button-left a{
-
+    box-sizing: border-box;
     background-color: transparent;
-    opacity: .5;
-    width: 64px;
-    height: 64px;
+    opacity: .3;
+    width: 34px;
+    height: 34px;
      
 }
+.button-right a img,
+.button-left a img{
+    width: 5rem;
+    height: 5rem;
+}
 .button-right{
-    margin-right: .7rem;
+    margin-right: 2rem;
 }
 .button-left{
     margin-left: 2rem;
@@ -75,4 +80,11 @@ main {
     width: 38rem;
     height: 34rem;
     z-index: -100;
+}
+
+/**------------Contact Container --------------------*/
+
+
+#midia-container {
+    height: 100vh;
 }
