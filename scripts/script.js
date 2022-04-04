@@ -44,3 +44,10 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 
 
 
+// Up button click
+
+let btn = $("#btn-up");
+
+btn.click(function (){
+  $('html,body').animate({ scrollTop: 0}, 'slow')
+})
