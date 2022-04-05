@@ -40,7 +40,7 @@ body {
     color: #fff;
     padding: 1rem 4rem;
     width: 100%;
-    font-weight: 500;
+    font-weight: bold;
     margin: 0 auto;
 
 
@@ -50,7 +50,7 @@ body {
     color: #fff;
     padding: 1rem 4rem;
     width: 100%;
-    font-weight: 500;
+    font-weight: bold;
     border-radius:0 0 2rem 0;
     margin: 0 auto;
 
@@ -61,7 +61,7 @@ body {
     color: #fff;
     padding: 1rem 4rem;
     width: 100%;
-    font-weight: 500;
+    font-weight: bold;
     margin: 0 auto;
     border-radius:0 0 0 2rem;
 
@@ -80,16 +80,18 @@ body {
     background-color:rgba(250, 250, 250, 0.89);
     transition: 1s;
     border-radius: 0 0 0 2rem;
-    color: rgba(10, 121, 133, .4);
+    color: #000;
 
 
 }
 #nav-bar .central:hover{
     background-color:rgba(250, 250, 250, 0.89);
-    color: rgba(10, 121, 133, .4);
-
+    color: #000;
     transition: 1s;
 
+}
+#nav-bar a{
+  
 }
 
 /*--------Bottom nav----------*/
@@ -225,6 +227,125 @@ section{
 
 
 
+/**------------Contact Container --------------------*/
 
+#popup-contact {
+  position: absolute;
+  right: 10rem;
+  bottom: 10rem;
+  font-size: 1.5rem;;
+  padding: 1rem;
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+#popup-contact:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/*----------Form------------*/
+.pop-up {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 60%;
+  min-width: 300px;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  border-radius: 1rem;
+}
+.modal form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: 2.3rem;
+  color: #000;
+}
+.modal label{
+  margin: .5rem 0;
+  font-weight: bold;
+}
+.modal textarea{
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#popup-form input{
+  border-radius: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,.1);
+
+}
+#popup-form textarea{
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,.1);
+
+}
+#popup-form #pop-btn {
+  background-color:rgb(22, 203, 223);
+  font-weight: bold;
+  font-size:2.3rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem ;
+  color: #fff;
+
+}
+#popup-form #pop-btn:hover {
+  background-color: #000;;
+  color: #fff;
+  cursor: pointer;
+
+  transition: 1s;
+}
+#popup-close {
+  font-size: 2rem;
+  border-radius: 50%;
+  border: none;
+  background-color:rgb(22, 203, 223);
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 1rem;
+}
+#popup-close:hover {
+  background-color: #000;
+  color:rgb(14, 227, 242);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.pop-up.show{
+  display: flex;
+  animation: pop-up .5s ease-in-out;
+}
 
   
