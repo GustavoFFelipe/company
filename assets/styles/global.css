@@ -90,9 +90,6 @@ body {
     transition: 1s;
 
 }
-#nav-bar a{
-  
-}
 
 /*--------Bottom nav----------*/
 
@@ -146,15 +143,36 @@ section{
   font-size: 2rem;
   margin-bottom: 3rem;
   font-weight: 700;
+
+  position: relative;
+}
+/**-------------Underline-------------*/
+
+#nav-bottom a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+
+  margin-bottom: -.5rem;
 }
 
-#nav-bottom a:hover{
-  text-decoration: underline;
+#nav-bottom a:hover:before {
   color:#000;
-  cursor: pointer;
-  transition: .5s;
-
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
+
+
 #contato {
   display: flex;
   justify-content: center;
@@ -180,7 +198,7 @@ section{
 }
 
 
-/*------------------Animation type-----------------------*/
+/*------------------Animation Text About type-----------------------*/
 
 
 .container-text {
@@ -227,14 +245,15 @@ section{
 
 
 
-/**------------Contact Container --------------------*/
+/**------------Pop-Up Contact Container --------------------*/
 
 #popup-contact {
   position: absolute;
-  right: 10rem;
-  bottom: 10rem;
-  font-size: 1.5rem;;
-  padding: 1rem;
+  right: 7%;
+  bottom: 35%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;;
   width: auto;
   background-color: #000;
   color: #fff;
@@ -348,4 +367,17 @@ section{
   animation: pop-up .5s ease-in-out;
 }
 
-  
+
+/*-----------------Comet---------*/
+
+.comet {
+  width:70rem;
+  height: 50rem;
+
+  position: absolute;
+  bottom: 10rem;
+  right: -50rem;
+
+  z-index: -3000;
+  animation: comet-fly 15s;
+}

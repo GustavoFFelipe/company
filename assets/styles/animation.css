@@ -87,6 +87,18 @@
   }
 }
 
+@keyframes comet-fly {
+
+  0%{
+    
+    transform:translateX(0);
+  }
+
+  100%{
+    transform:translatex(-1800px);
+  }
+}
+
 
 
 
