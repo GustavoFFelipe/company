@@ -4,13 +4,17 @@
     font-size: 62.5%;
     text-decoration: none;
     font-family: 'Montserrat', arial, helvetica;
+    box-sizing: border-box;
+    
 
 }
 html{
     width: auto;
-    overflow-x: hidden;
+    
     }
 body {
+  overflow-x: hidden;
+  overflow-y: smooth;
     margin: 0;
     padding: 0;
     font-size: 5rem;
@@ -379,5 +383,5 @@ section{
   right: -50rem;
 
   z-index: -3000;
-  animation: comet-fly 15s;
+  animation: comet-fly 15s infinite;
 }

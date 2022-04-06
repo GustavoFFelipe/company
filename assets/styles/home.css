@@ -1,8 +1,22 @@
+/**-----------------Carrousel--------------*/
+
+
+
+#item a img{
+    margin-top: 10rem;
+    width: 50rem;
+    height: 40rem;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+
+
 /* ----Main container ------*/
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     animation: float-side 7s ease-in-out infinite;
@@ -39,14 +53,6 @@ main {
     transition: .5s;
 }
 
-
-#about a img{
-    margin-top: 10rem;
-    width: 50rem;
-    height: 40rem;
-    animation: float 2s ease-in-out infinite;
-
-}
 
 
 #robot{
