@@ -88,6 +88,20 @@
 }
 
 @keyframes comet-fly {
+<<<<<<< HEAD
+=======
+
+  0%{
+    
+    transform:translateX(0);
+  }
+
+  100%{
+    transform:translatex(-1800px);
+  }
+}
+
+>>>>>>> 9274b36fc58bd3782c31991d6792fdd1c5349a64
 
   0%{
     

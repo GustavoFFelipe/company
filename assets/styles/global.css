@@ -4,13 +4,17 @@
     font-size: 62.5%;
     text-decoration: none;
     font-family: 'Montserrat', arial, helvetica;
+    box-sizing: border-box;
+    
 
 }
 html{
     width: auto;
-    overflow-x: hidden;
+    
     }
 body {
+  overflow-x: hidden;
+  overflow-y: smooth;
     margin: 0;
     padding: 0;
     font-size: 5rem;
@@ -198,18 +202,75 @@ body {
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+/*------------------Animation Text About type-----------------------*/
+
+
+.container-text {
+    display: flex;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    right: 41%;
+    top: 67%;
+  }
+  .container-text p {
+    color:rgba(250, 250, 250, 0.89);
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container-text p span.typed-text {
+      font-size: 3rem;
+    font-weight: normal;
+    color: #0A7985;
+  }
+  .container-text p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 5px;
+    animation: blink 1s infinite;
+  }
+  .container-text p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+
+>>>>>>> 9274b36fc58bd3782c31991d6792fdd1c5349a64
 
 /**------------Pop-Up Contact Container --------------------*/
 
 #popup-contact {
   position: absolute;
+<<<<<<< HEAD
   right: 5%;
   bottom: 30%;
   font-size: 1.5rem;;
   font-weight: bold;
   padding: 1rem 2rem;
+=======
+  right: 7%;
+  bottom: 35%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;;
+>>>>>>> 9274b36fc58bd3782c31991d6792fdd1c5349a64
   width: auto;
   background-color: #000;
   color: #fff;
@@ -337,6 +398,7 @@ body {
 
   z-index: -3000;
   animation: comet-fly 15s infinite;
+<<<<<<< HEAD
 }
 
 
@@ -365,4 +427,6 @@ body {
   cursor: pointer;
   transition: 1.5s;
   opacity: 1;
+=======
+>>>>>>> 9274b36fc58bd3782c31991d6792fdd1c5349a64
 }

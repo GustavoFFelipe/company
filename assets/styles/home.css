@@ -1,8 +1,22 @@
+/**-----------------Carrousel--------------*/
+
+
+
+#item a img{
+    margin-top: 10rem;
+    width: 50rem;
+    height: 40rem;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+
+
 /* ----Main container ------*/
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     animation: float-side 7s ease-in-out infinite;
@@ -41,6 +55,7 @@ main {
 }
 
 
+<<<<<<< HEAD
 .home-planets img{
         margin-top: 10rem;
         width: 26rem;
@@ -57,6 +72,8 @@ main {
     animation: float 4.5s ease-in-out infinite;   
 }
 
+=======
+>>>>>>> 9274b36fc58bd3782c31991d6792fdd1c5349a64
 
 #robot{
     position: absolute;
