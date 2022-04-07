@@ -15,6 +15,7 @@ main {
     opacity: .3;
     width: 34px;
     height: 34px;
+
      
 }
 .button-right a img,
@@ -40,12 +41,20 @@ main {
 }
 
 
-#about a img{
-    margin-top: 10rem;
-    width: 50rem;
-    height: 40rem;
-    animation: float 2s ease-in-out infinite;
+.home-planets img{
+        margin-top: 10rem;
+        width: 26rem;
+        height: 35rem;}
+#portfolio img{
+    animation: float 3s ease-in-out infinite;   
+}
 
+#about img{
+    animation: float 6s ease-in-out infinite;   
+}
+
+#contact img{
+    animation: float 4.5s ease-in-out infinite;   
 }
 
 
@@ -75,30 +84,4 @@ main {
     width: 38rem;
     height: 34rem;
     z-index: -100;
-}
-/*-------Button --------*/
-
-#btn-up{
-    background-color: #fff;
-    border-radius: 1rem;
-    display: flex;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    padding: .3rem;
-    right: 2rem;
-    bottom: 1.5rem;
-    opacity: .4;
-    z-index: 100;
-}
-#btn-up img{
-    width: 4rem;
-    height: 4rem;
-}
-#btn-up:hover {
-    background-color: #fff;
-    cursor: pointer;
-    transition: 1.5s;
-    opacity: 1;
 }

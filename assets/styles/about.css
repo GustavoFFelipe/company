@@ -1,0 +1,89 @@
+ main {
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+ }
+ #container-content{
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     align-items: center;
+
+ }
+ 
+ section h2{
+     color: #fff;
+     font-size: 2rem;
+     font-weight: bold;
+     margin: .5rem auto;
+ }
+ .text {
+     color: #fff;
+     text-align: justify;
+     font-size: 1.8rem;
+     margin: 1rem auto;
+
+ }
+
+ /*------------------Animation Text About type-----------------------*/
+
+
+.container-text {
+    display: flex;
+    margin: 1rem auto 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-text p {
+    color:rgba(250, 250, 250, 0.89);
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container-text p span.typed-text {
+      font-size: 3rem;
+    font-weight: normal;
+    color: #0A7985;
+  }
+  .container-text p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 5px;
+    animation: blink 1s infinite;
+  }
+  .container-text p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+ /*------------About images -------------*/
+
+ .space-base img {
+     position: absolute;
+     left: -19%;
+     top: 65%;
+     width: 75rem;
+     height: 60rem;
+     animation: float-background 7s ease-in-out infinite;
+ }
+
+ .astronaut img {
+    position: absolute;
+    right: -5%;
+    top: 10%;
+    width: 35rem;
+    height: 25rem;
+    animation: astrounaut 160s infinite;
+}

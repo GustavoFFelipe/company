@@ -11,7 +11,7 @@
     
     <!---Styles-->
     <link rel="stylesheet" href="/assets/styles/global.css">
-    <link rel="stylesheet" href="/assets/styles/home.css">
+    <link rel="stylesheet" href="/assets/styles/contact.css">
     <link rel="stylesheet" href="/assets/styles/animation.css">
 
     <!--Fonts-->
@@ -19,8 +19,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Train+One&display=swap" rel="stylesheet">
 
-    <title>Anansi | Gustavo</title>
+    <title>Anansi | Contato</title>
 </head>
+
 <body>
     <nav id="nav-bar">
         <a href="/src/index.html"class="left">Home</a>
@@ -29,43 +30,42 @@
         <a href="/src/contact.html"class="right">Contato</a>
     </nav>
 
-    <main id="main-container">
-        <!--Side Button-->
-        <div class="button-left">
-            
-            <a href="/src/portfolio.html">
-                <img src="/assets/images/arrow-left.png" alt="Link portfolio" style="color: white">
-            </a>
+    <main>
 
-        </div>
-        <!--Central image-->
-        <div id="portfolio" class="home-planets">
-            <a href="/src/portfolio.html"><img src="/assets/images/alien-planet-blue.png" alt="Planet Portfólio"></a>     
-        </div>
+         <div class="form-container">
+            <h3 class='subtitle'>Entre em contato</h3>
+            <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
 
-        <div id="about" class="home-planets">
-            <a href="/src/about.html"><img src="/assets/images/earth.png" alt="Planet Earth"></a>     
-        </div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="" Placeholder="Nome" required="true">
 
-        <div id="contact" class="home-planets">
-            <a href="/src/contact.html"><img src="/assets/images/ring-planet.png" alt="Planet Contact"></a>     
-        </div>
+                <label for="last-name">Sobrenome</label>
+                <input type="text" name="last-name" id="" placeholder="Sobrenome" required="true">
 
-        <!--Side Button-->
-        <div class="button-right">
-            <a href="/src/about.html"><img src="/assets/images/arrow-right.png" alt=""></a>
-        </div>
-        <!--images-->
-        <div id="robot">
-            <img src="/assets/images/robot.png" alt="">
-        </div>
+                <label for="whats">WhatsApp</label>
+                <input type="number" name="whats" id="" placeholder="Seu melhor número">
 
-        <div id="alien-ship">
-            <img src="/assets/images/alien-ship.png" alt="">
-        </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id=""placeholder="seumelhor@email.com" required="true">
+
+                <label for="massege">Sua mensagem</label>
+                <textarea name="message" id="" cols="60" rows="5"></textarea>
+
+                <!--Auto Anwser-->
+                <input type="hidden" name="_autoresponse" value="Muito obrigado pelo contato!
+                Irei te responder o mais rápido possivel.
+                Antenciosamente,
+                Equipe Anansi.">
+               <!--Mydomain--> 
+               <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <input id="pop-btn" type="submit" value="Enviar">
+            </form>
+         </div>
+    
+
 
     </main>
-    
+
     <section id="section-home">
         <img class="comet" src="/assets/images/animation-comet.png" alt="">
 
@@ -108,8 +108,6 @@
     
                 <!--Pop up Container-->
     <div id="pop-container" class="pop-up ">
-        <div class="modal">
-            <button id="popup-close">X</button>
             <h3 class='subtitle'>Entre em contato</h3>
             <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
 
@@ -137,8 +135,12 @@
                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
                 <input id="pop-btn" type="submit" value="Enviar">
             </form>
-        </div>
+        
     </div>
     <script src="/scripts/script.js"></script>
+
+
+
+          
 </body>
 </html>
