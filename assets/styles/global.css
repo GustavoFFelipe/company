@@ -278,8 +278,7 @@ body {
 }
 #popup-form input{
   border-radius: 1.5rem;
-  padding: 0 1rem;
-  height: 1%;
+  padding: 1rem 1rem;
   background-color: rgba(0,0,0,.1);
 
 }

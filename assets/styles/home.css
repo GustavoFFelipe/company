@@ -86,3 +86,37 @@
     height: 34rem;
     z-index: -100;
 }
+/*------- Button Pop-Up-----------------*/
+
+.modal-index {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    height: auto;
+    min-width: 300px;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    border-radius: 1rem;
+  }
+  .modal-index form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 2.3rem;
+    color: #000;
+  }
+  .modal-index label{
+    margin: .5rem 0;
+    font-weight: bold;
+  }
+  .modal-index textarea{
+    margin-bottom: 2rem;
+  }
+  #popup-form input{
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    background-color: rgba(0,0,0,.1);
+  
+  }
