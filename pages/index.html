@@ -8,10 +8,13 @@
     <link rel="shortcut icon" href="/assets/images/icons8-aranha-64.png" type="image/x-icon">
     <!--Button Jquery-->   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <!---Styles-->
     <link rel="stylesheet" href="/assets/styles/global.css">
-    <link rel="stylesheet" href="/assets/styles/portfolio.css">
+    <link rel="stylesheet" href="/assets/styles/home.css">
     <link rel="stylesheet" href="/assets/styles/animation.css">
 
     <!--Fonts-->
@@ -19,30 +22,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Train+One&display=swap" rel="stylesheet">
 
-    <title>Anansi | Portfolio</title>
+    <title>Anansi | Gustavo</title>
 </head>
-
 <body>
     <nav id="nav-bar">
-        <a href="/src/index.html"class="left">Home</a>
-        <a href="/src/portfolio.html"class="central">Portfólio</a>
-        <a href="/src/about.html"class="central">Sobre</a>
-        <a href="/src/contact.html"class="right">Contato</a>
+        <a href="/pages/index.html"class="left">Home</a>
+        <a href="/pages/portfolio.html"class="central">Portfólio</a>
+        <a href="/pages/about.html"class="central">Sobre</a>
+        <a href="/pages/contact.html"class="right">Contato</a>
     </nav>
 
-    <main>
+    <main id="main-container">
 
-          <!--JS
-            <div class="container-text">
-                <p>Sobre<span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-            </div>
-            -->
-    
+        <!--Side Button-->
+        <div class="button-left">
+            
+            <a href="/pages/portfolio.html">
+                <img src="/assets/images/arrow-left.png" alt="Link portfolio">
+            </a>
 
+        </div>
+        <!--Central image-->
+        <div id="portfolio" class="home-planets">
+            <a href="/pages/portfolio.html"><img src="/assets/images/alien-planet-blue.png" alt="Planet Portfólio"></a>     
+        </div>
+
+        <div id="about" class="home-planets">
+            <a href="/pages/about.html"><img src="/assets/images/earth.png" alt="Planet Earth"></a>     
+        </div>
+
+        <div id="contact" class="home-planets">
+            <a href="/pages/contact.html"><img src="/assets/images/ring-planet.png" alt="Planet Contact"></a>     
+        </div>
+        <!--Side Button-->
+        <div class="button-right">
+            <a href="/pages/about.html"><img src="/assets/images/arrow-right.png" alt=""></a>
+        </div>
+
+        <!--images-->
+        <div id="robot">
+            <img src="/assets/images/robot.png" alt="">
+        </div>
+
+        <div id="alien-ship">
+            <img src="/assets/images/alien-ship.png" alt="">
+        </div>
 
     </main>
+    
 
     <section id="section-home">
+
+
+
         <img class="comet" src="/assets/images/animation-comet.png" alt="">
 
         <div class="container">
@@ -54,10 +86,10 @@
                 <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
             </div>
             <div id="nav-bottom">
-                <a href="/src/index.html">Home</a>
-                <a href="/src/about.html">Sobre</a>
-                <a href="/src/portfolio.html">Portfólio</a>
-                <a href="/src/contact.html">Contato</a>
+                <a href="/pages/index.html">Home</a>
+                <a href="/pages/about.html">Sobre</a>
+                <a href="/pages/portfolio.html">Portfólio</a>
+                <a href="/pages/contact.html">Contato</a>
             </div>
             <div id="contato">
                 <img src="../assets/images/whats.png" alt="">
@@ -65,7 +97,9 @@
 
             </div>
             <!---------------Pop Up btn -------------->
+
             <button id="popup-contact">Mensagem subespacial</button>
+
 
            
         </div>
@@ -83,7 +117,7 @@
     </section>
     
                 <!--Pop up Container-->
-    <div id="pop-container" class="pop-up ">
+     <div id="pop-container" class="pop-up ">
         <div class="modal">
             <button id="popup-close">X</button>
             <h3 class='subtitle'>Entre em contato</h3>
@@ -115,10 +149,9 @@
             </form>
         </div>
     </div>
-    <script src="/scripts/script.js"></script>
 
+    <!--Scripts-->
+    <script src="/src/script.js"></script>
 
-
-          
-</body>
+    </body>
 </html>
