@@ -8,10 +8,13 @@
     <link rel="shortcut icon" href="/assets/images/icons8-aranha-64.png" type="image/x-icon">
     <!--Button Jquery-->   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <!---Styles-->
     <link rel="stylesheet" href="/assets/styles/global.css">
-    <link rel="stylesheet" href="/assets/styles/contact.css">
+    <link rel="stylesheet" href="/assets/styles/home.css">
     <link rel="stylesheet" href="/assets/styles/animation.css">
 
     <!--Fonts-->
@@ -19,54 +22,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Train+One&display=swap" rel="stylesheet">
 
-    <title>Anansi | Contato</title>
+    <title>Anansi | Gustavo</title>
 </head>
-
 <body>
     <nav id="nav-bar">
-        <a href="/pages/index.html"class="left">Home</a>
-        <a href="/pages/portfolio.html"class="central">Portfólio</a>
-        <a href="/pages/about.html"class="central">Sobre</a>
-        <a href="/pages/contact.html"class="right">Contato</a>
+        <a href="/index.html"class="left">Home</a>
+        <a href="/portfolio.html"class="central">Portfólio</a>
+        <a href="/about.html"class="central">Sobre</a>
+        <a href="/contact.html"class="right">Contato</a>
     </nav>
 
-    <main>
+    <main id="main-container">
 
-         <div class="form-container">
-            <h3 class='subtitle'>Entre em contato</h3>
-            <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
+        <!--Side Button-->
+        <div class="button-left">
+            
+            <a href="/portfolio.html">
+                <img src="/assets/images/arrow-left.png" alt="Link portfolio">
+            </a>
 
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="" Placeholder="Nome" required="true">
+        </div>
+        <!--Central image-->
+        <div id="portfolio" class="home-planets">
+            <a href="/portfolio.html"><img src="/assets/images/alien-planet-blue.png" alt="Planet Portfólio"></a>     
+        </div>
 
-                <label for="last-name">Sobrenome</label>
-                <input type="text" name="last-name" id="" placeholder="Sobrenome" required="true">
+        <div id="about" class="home-planets">
+            <a href="/about.html"><img src="/assets/images/earth.png" alt="Planet Earth"></a>     
+        </div>
 
-                <label for="whats">WhatsApp</label>
-                <input type="number" name="whats" id="" placeholder="Seu melhor número">
+        <div id="contact" class="home-planets">
+            <a href="/contact.html"><img src="/assets/images/ring-planet.png" alt="Planet Contact"></a>     
+        </div>
+        <!--Side Button-->
+        <div class="button-right">
+            <a href="/about.html"><img src="/assets/images/arrow-right.png" alt=""></a>
+        </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id=""placeholder="seumelhor@email.com" required="true">
+        <!--images-->
+        <div id="robot">
+            <img src="/assets/images/robot.png" alt="">
+        </div>
 
-                <label for="massege">Sua mensagem</label>
-                <textarea name="message" id="" cols="60" rows="5"></textarea>
-
-                <!--Auto Anwser-->
-                <input type="hidden" name="_autoresponse" value="Muito obrigado pelo contato!
-                Irei te responder o mais rápido possivel.
-                Antenciosamente,
-                Equipe Anansi.">
-               <!--Mydomain--> 
-               <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-                <input id="pop-btn" type="submit" value="Enviar">
-            </form>
-         </div>
-    
-
+        <div id="alien-ship">
+            <img src="/assets/images/alien-ship.png" alt="">
+        </div>
 
     </main>
+    
 
     <section id="section-home">
+
+
+
         <img class="comet" src="/assets/images/animation-comet.png" alt="">
 
         <div class="container">
@@ -78,10 +86,10 @@
                 <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
             </div>
             <div id="nav-bottom">
-                <a href="/pages/index.html">Home</a>
-                <a href="/pages/about.html">Sobre</a>
-                <a href="/pages/portfolio.html">Portfólio</a>
-                <a href="/pages/contact.html">Contato</a>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">Sobre</a>
+                <a href="/portfolio.html">Portfólio</a>
+                <a href="/contact.html">Contato</a>
             </div>
             <div id="contato">
                 <img src="../assets/images/whats.png" alt="">
@@ -89,7 +97,9 @@
 
             </div>
             <!---------------Pop Up btn -------------->
+
             <button id="popup-contact">Mensagem subespacial</button>
+
 
            
         </div>
@@ -107,7 +117,9 @@
     </section>
     
                 <!--Pop up Container-->
-    <div id="pop-container" class="pop-up ">
+     <div id="pop-container" class="pop-up ">
+        <div class="modal">
+            <button id="popup-close">X</button>
             <h3 class='subtitle'>Entre em contato</h3>
             <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
 
@@ -135,12 +147,11 @@
                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
                 <input id="pop-btn" type="submit" value="Enviar">
             </form>
-        
+        </div>
     </div>
+
+    <!--Scripts-->
     <script src="/src/script.js"></script>
 
-
-
-          
-</body>
+    </body>
 </html>
