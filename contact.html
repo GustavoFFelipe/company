@@ -31,10 +31,9 @@
     </nav>
 
     <main>
-
-         <div class="form-container">
-            <h3 class='subtitle'>Entre em contato</h3>
-            <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
+        <section id="container-contact">
+            <h3 class='contact-title'>Entre em contato</h3>
+            <form id="form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
 
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="" Placeholder="Nome" required="true">
@@ -58,14 +57,16 @@
                 Equipe Anansi.">
                <!--Mydomain--> 
                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-                <input id="pop-btn" type="submit" value="Enviar">
+                <input id="btn-send" type="submit" value="Enviar">
             </form>
          </div>
+     </section>
+            
     
 
 
     </main>
-
+    <!-------------Bottom------------->
     <section id="section-home">
         <img class="comet" src="/assets/images/animation-comet.png" alt="">
 
@@ -84,12 +85,13 @@
                 <a href="/contact.html">Contato</a>
             </div>
             <div id="contato">
+                <div id="number-contact">
                 <img src="../assets/images/whats.png" alt="">
-                <h2>+55 (32) 99853-8236</h2>
-
-            </div>
+                    <h2>+55 (32) 99853-8236</h2>
+                </div>
             <!---------------Pop Up btn -------------->
             <button id="popup-contact">Mensagem subespacial</button>
+            </div>
 
            
         </div>
