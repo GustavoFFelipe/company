@@ -29,7 +29,7 @@ body {
     justify-content: space-around;
     box-sizing: border-box;
     width: 600px;
-   
+   text-decoration: none;
 
     margin:0 auto;
     border-radius:  0 0 2rem 2rem;
@@ -69,7 +69,9 @@ body {
     margin: 0 auto;
     border-radius:0 0 0 2rem;
 
-
+}
+#nav-bar a{
+  text-decoration: none;
 
 }
 
