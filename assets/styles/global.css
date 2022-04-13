@@ -79,8 +79,7 @@ body {
     background-color:rgba(250, 250, 250, 0.89);
     transition: 1s;
     border-radius: 0 0 2rem 0;
-    color: rgba(10, 121, 133, .4);
-
+    color: #000;
 }
 #nav-bar .left:hover{
     background-color:rgba(250, 250, 250, 0.89);
