@@ -213,8 +213,9 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    margin-top:2rem;
+    margin-top: 2rem;
     justify-content: center;
+    margin-left: 5rem;
   }
   #number-contact{
     display: flex;
@@ -233,12 +234,12 @@
   #number-contact img{
     width: 30px;
     height: 30px;
-    margin-right: 1.5rem;}
+    margin-right: 1rem;}
   .copy {
     width: 100vw;
     color: #fff;
     bottom: 0px;
     position: absolute;
-    left:40%; 
+    left:37%; 
   }
   

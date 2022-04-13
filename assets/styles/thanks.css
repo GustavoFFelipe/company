@@ -1,0 +1,14 @@
+
+section h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 8rem;
+}
+
+.text {
+    font-size: 3rem;
+    text-align: start;
+}
+.text i {
+    font-size: 3rem;
+}
