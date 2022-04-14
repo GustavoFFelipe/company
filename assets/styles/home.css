@@ -30,7 +30,9 @@
     margin-right: 2rem;
 }
 .button-left{
-    margin-left: 2rem;
+    margin-left: -8rem;
+    position: relative;
+    z-index: 100;
 }
 
 
@@ -61,7 +63,7 @@
 }
 #robot{
     position: absolute;
-    left: 80px;
+    left: -50px;
     bottom: -100px;
     animation: float-robot 7s ease-in-out infinite;
 
@@ -93,7 +95,7 @@
     flex-direction: column;
     background-color: #fff;
     width: 60%;
-    height: auto;
+    height: 95vh;
     min-width: 300px;
     justify-content:center;
     align-items:center;
@@ -104,142 +106,46 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #000;
   }
   .modal-index label{
     margin: .5rem 0;
     font-weight: bold;
+    font-size: 2rem;
   }
   .modal-index textarea{
     margin-bottom: 2rem;
+    height: 10rem;
   }
   #popup-form input{
     border-radius: 1.5rem;
     padding: 0 1rem;
     background-color: rgba(0,0,0,.1);
+    
   
   }
 
-
-
-  /*------------Bottom -----------------------------*/
-
-
-#section-home{ 
-    position: relative;
-    height: 100vh;
-  }
-  .waves{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -50;
-    height: 80vh;
-  
-    opacity: .5;
-  }
-  .container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-  }
-  .midia{
-    display: flex;
-    justify-content: space-evenly;
-    width: 30%;
-    margin-bottom: 10rem;
-    margin-left: 1rem;
-  }
-  
-  .midia a img{
-    width: 50px;
-    height: 50px;
-  }
-  #nav-bottom {
-    width: 40%;
-    margin-right: 2rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8rem;
-  
-  }
-  #nav-bottom a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
-  
-    position: relative;
-  }
-  /**-------------Underline-------------*/
-  
-  #nav-bottom a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  
-    margin-bottom: -.5rem;
-  }
-  
-  #nav-bottom a:hover:before {
-    color:#000;
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-  
-  
-  #contato {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    justify-content: center;
-    margin-left: 5rem;
-  }
-  #number-contact{
-    display: flex;
-    margin-bottom: 2rem;
-    justify-content:center;
-  
-  }
-  #number-contact h2{
-    font-size: 2rem;
-    color: #000;
+  #popup-form #pop-btn {
+    background-color:rgb(22, 203, 223);
     font-weight: bold;
-    width: 80%;
-    margin: 0;
+    font-size:2rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem ;
+    color: #fff;
+  
+  }
+  #popup-form #pop-btn:hover {
+    background-color: #000;;
+    color: #fff;
+    cursor: pointer;
+  
+    transition: .5s;
   }
   
-  #number-contact img{
-    width: 30px;
-    height: 30px;
-    margin-right: 1rem;}
-  .copy {
-    width: 100vw;
-    color: #fff;
-    bottom: 0px;
-    position: absolute;
-    left:37%; 
-  }
+
+
+
   

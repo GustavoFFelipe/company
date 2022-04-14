@@ -1,0 +1,394 @@
+@media (min-width:1754px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #nav-bar {
+        width: 1000px;
+        padding: 1rem 0;
+        font-size:5rem;
+    }
+    /*--------Main container---------*/
+    #main-container{
+        width: 100vw;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .button-right a img,
+    .button-left a img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .home-planets img{
+        margin-top: 10rem;
+        width: 36rem;
+        height: 45rem;
+    }
+
+    #robot img{
+        width: 50rem;
+        height:52rem;
+    
+        z-index: 10;
+    }
+
+    #alien-ship{
+        top: -20px;
+
+    }
+
+    #alien-ship img{
+        width: 58rem;
+        height: 54rem;
+        z-index: -100;
+    }
+
+    /*----------Button Pop-up --------*/
+
+    .modal-index {
+        width: 70%;
+        border-radius: 3rem;
+        height: 70vh;
+
+      }
+      .modal-index form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        font-size: 3rem;
+        color: #000;
+      }
+     
+      .modal-index label{
+        margin: .5rem 0;
+        font-weight: bold;
+        font-size: 3.5rem;
+      }
+      .modal-index textarea{
+        height: 20rem;
+    }
+    #popup-form #pop-btn {
+        font-size:3.5rem;
+        font-weight:bold;
+        margin: 3rem 0 3rem 0;
+        border-radius: 2rem;
+        padding: 3rem ;
+        color: #fff;
+      
+      }
+      #popup-close {
+        font-size: 4rem;
+        padding: 2rem;
+        top: -20px;
+        right: -20px;
+      
+      }
+
+      /*------- Comet ------------*/
+
+      .comet {
+        width:100rem;
+        height: 80rem;
+    }
+    .waves{
+        z-index: -50;
+        height: 50vh;
+      }
+
+      /***----Mobile-------*/
+    #mobile-nav{
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px){
+    #nav-bar{
+        width: 400px;
+        font-size: 2rem;
+    }
+    #nav-bar .left,
+    #nav-bar .right,
+    #nav-bar .central{
+        padding: 1rem;  
+    }
+    .button-right a img,
+    .button-left a img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .home-planets img{
+        margin-top: 10rem;
+        width: 16rem;
+        height: 25rem;
+    }
+
+    #robot img{
+        width: 20rem;
+        height:22rem;
+
+        z-index: 10;
+    }
+    #robot {
+        bottom: -30px;
+    }
+
+    #alien-ship img{
+        width: 24rem;
+        height: 20rem;
+        z-index: -100;
+    }
+    #alien-ship{
+        right: -40px;
+        top: -15px;
+    }
+
+    /*--------- Button Pop-up-----------*/
+
+    .modal-index form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        font-size: 1.5rem;
+        color: #000;
+        border: none;
+      }
+      .modal-index label{
+        margin: .5rem 0;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      .modal-index textarea{
+        height: 8rem;
+    }
+    #popup-form #pop-btn {
+        font-size:2rem;
+        font-weight:bold;
+        margin: .5rem 0 .5rem 0;
+        border-radius: 2rem;
+        padding: .5rem ;
+        color: #fff;
+      
+      }
+      #popup-close {
+        font-size: 2rem;
+        padding: 1rem;
+        top: -10px;
+        right: -10px;
+      }
+      .modal-index h3{
+          font-size: 2rem;
+          margin: 1rem;
+      }
+      /*---- Comet --------*/
+
+      .comet{
+          width:50rem;
+          height: 40rem;
+      }
+
+      /*----- Bottom nav-bar --------*/
+
+      .container {
+          width: 100%;
+      }
+
+      .grid-1 a img{
+        width: 4rem;
+        height:4rem;
+      }
+
+      #nav-bottom a {
+          font-size: 1.7rem;
+          margin-bottom: 1.5rem;
+      }
+
+      #number-contact img{
+          width: 2rem;
+          height: 2rem;
+          margin-bottom: 0;
+      }
+      #number-contact h2{
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+      }
+
+      #popup-contact{
+        padding: 1rem;
+        margin-bottom: 10rem;
+      }
+      #mobile-nav{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px){
+    /*----Without display for mobile -----*/
+    
+        #main-container {
+            animation: none;
+        }
+    
+        #nav-bar,
+        #alien-ship,
+        #robot,
+        .button-left,
+        .button-right,
+        .home-planets
+        {
+            display: none;
+        }
+        
+        #mobile-nav{
+            display: flex;
+            width: 90%;
+            height: 5rem;
+            align-items: center;
+            margin: auto;
+            justify-content: space-between;
+            
+            
+        }
+        #logo{
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            width: 5rem;
+            height: 5rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .menu{
+            display: none;
+        }
+        .one,
+        .two,
+        .three {
+            background-color: #0ce2f1;
+            height: 3px;
+            margin: 5px 0;
+            opacity: .6;
+            transition-duration: 0.3s;
+        }
+        .one {
+            width: 100%;
+        }
+        .two {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .three{
+            width: 100%
+        }
+    
+        /*-----Main container ----------*/
+    
+        #main-container{
+            display: flex;
+            justify-content: center; 
+           
+        }
+        #mobile-text {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: none;
+            width:80vw;
+            height: 30vh;
+            animation: tilt 2s ;
+            position: relative;
+            display:block;
+        }
+        #mobile-text p {
+            color: #fff;
+            font-size: 2rem;
+            
+        }
+    
+        .location span{
+            font-size: 1.5rem;;
+            margin-left: 1rem;
+        }
+        .location img{
+            width: 2rem;
+            height: 2rem;
+        }
+        #astronaut-mobile {
+            width: 32rem;
+            height: 30rem;
+            position: absolute;
+            top: 8rem;
+            right: -5rem;
+            display:block;
+            z-index: -100;
+    
+            animation: mobile-astronaut 30s infinite linear;
+        }
+        
+    
+        /*------- Full screen menu ----------*/
+        #menu-mobile.on {
+            position: absolute;
+                    top: 0;
+                    right: 0;
+    
+                    width: 100%;
+                    height: 100vh;
+    
+                    background-color: black;
+    
+                    
+    
+                    z-index: 100000;
+    
+                    display: flex;
+                    justify-content: flex-start;
+    
+        }
+        #menu-mobile.on .menu {
+            display: block;
+            margin-top: 10rem;
+            width: auto;
+        }
+        #menu-mobile .menu-toggle {
+            position: absolute;
+            top: -10px;
+            right: 15px;
+        }
+        #menu-mobile.on .menu-toggle .one{
+            transform: rotate(45deg) translate(4px, 6px);
+            }
+        #menu-mobile.on  .menu-toggle .two{
+                transform: rotate(-45deg) translate(0px, 0px);
+                width: 100%;
+                }
+        #menu-mobile.on .menu-toggle .three{
+            display: none;
+        }
+    
+        #menu-mobile.on .menu  a{
+            align-items: center;
+            display: block;
+            transition-duration: 1s;
+            color:#fff;
+            margin-left: 1rem;
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 10rem;
+            text-decoration: none;
+        }
+        #menu-mobile.on .menu  a:visited {
+            margin-left: 6rem;
+            transition: .5s;
+        }
+    
+    
+      
+    }

@@ -69,3 +69,20 @@ function initialPopUp(popId) {
 const popBtn = document.getElementById('popup-contact');
 popBtn.addEventListener('click', () => initialPopUp('pop-container'));
 
+
+
+// Toggle Menu Button
+
+let show = true;
+
+const menuMobile = document.querySelector("#menu-mobile");
+const menuToggle = menuMobile.querySelector(".menu-toggle");
+
+menuToggle.addEventListener("click", () => {
+
+    document.body.style.overflow = show ? "hidden" : "initial";
+
+    menuMobile.classList.toggle("on", show)
+    show = !show;
+})
+

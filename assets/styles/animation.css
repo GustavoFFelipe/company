@@ -98,7 +98,7 @@
   }
 }
 
-@keyframes astrounaut {
+@keyframes astronaut {
 
   0%{
     
@@ -260,5 +260,54 @@
   }
   100% {
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+/*--Mobile animation ---*/
+
+@-webkit-keyframes tilt {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+
+/*------- Mobile astro ----------*/
+
+
+@keyframes mobile-astronaut {
+
+  0%{
+    
+    transform:translateX(20px) rotate(0deg);
+
+  }
+
+  50%{
+    transform:translatex(-500px) rotate(-1075deg);
+
+  }
+  100% {
+    transform:translateX(20px) rotate(0deg);
+
   }
 }
