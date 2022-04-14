@@ -227,10 +227,15 @@
 
 @media (max-width: 500px){
     /*----Without display for mobile -----*/
-    
+    html{
+        width: 500px;
+    }
     body{
-        overflow: hidden;
-        height: 100vh;
+        width: 500px;
+        overflow-x: hidden;
+        height: auto;
+        box-sizing: border-box;
+        max-width: 500px;
     }
         #main-container {
             animation: none;
@@ -350,7 +355,7 @@
     
                     
     
-                    z-index: 100000;
+                    z-index: 100;
     
                     display: flex;
                     justify-content: flex-start;
@@ -363,7 +368,7 @@
         }
         #menu-mobile .menu-toggle {
             position: absolute;
-            top: -10px;
+            top: 10px;
             right: 15px;
         }
         #menu-mobile.on .menu-toggle .one{
@@ -384,7 +389,7 @@
             color:#fff;
             margin-left: 1rem;
             font-weight: bold;
-            font-size: 4rem;
+            font-size: 2.5rem;
             line-height: 10rem;
             text-decoration: none;
         }
