@@ -228,6 +228,10 @@
 @media (max-width: 500px){
     /*----Without display for mobile -----*/
     
+    body{
+        overflow: hidden;
+        height: 100vh;
+    }
         #main-container {
             animation: none;
         }
@@ -301,7 +305,7 @@
             padding: 2rem;
             border: none;
             width:80vw;
-            height: 30vh;
+            height: auto;
             animation: tilt 2s ;
             position: relative;
             display:block;
