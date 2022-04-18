@@ -231,7 +231,7 @@ body {
 
 /**------------Pop-Up Btn --------------------*/
 
-#popup-contact {
+.popup-contact {
   margin: auto;
   font-size: 1.5rem;;
   font-weight: bold;
@@ -244,7 +244,7 @@ body {
   animation: jello 3s ease-in-out infinite;
 }
 
-#popup-contact:hover {
+.popup-contact:hover {
   background-color: #fff;
   color: #000;
   font-weight: bold;

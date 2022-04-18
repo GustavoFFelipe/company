@@ -222,7 +222,7 @@
           margin-bottom: 1rem;
       }
 
-      #popup-contact{
+      .popup-contact{
         padding: 1rem;
         margin-bottom: 10rem;
       }
@@ -312,7 +312,8 @@
             width: 100%;
             flex-direction: column;
             align-items: center;
-           
+            height: auto;
+            z-index: -1000;
         }
         #mobile-text {
             background-color: rgba(255, 255, 255, 0.2);
@@ -341,15 +342,14 @@
             height: 2rem;
         }
         #astronaut-mobile {
+            display: flex;
+            position: absolute;
+            top: 5rem;
+            right: 20rem;
             width: 32rem;
             height: 30rem;
-            position: absolute;
-            top: 8rem;
-            right: -20rem;
-            display:block;
-            z-index: -100;
-    
             animation: mobile-astronaut 30s infinite linear;
+            z-index: -1000;
         }
         
     
@@ -410,14 +410,19 @@
             margin-left: 6rem;
             transition: .5s;
         }
-
+/*--------- Cards --------*/
         #section-home{
             display: none;
+        }
+        
+        #about-link {
+            margin-top: 70rem;
         }
 
        #card-container {
             width: 100%;
-            height: 30vh;
+            height: auto;
+            
 
         }
         .card {
@@ -432,5 +437,58 @@
             display:block;
             margin: 2.5rem auto;
         }
-      
+        .card-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card-1 img {
+            border: none;
+            border-radius: 1rem 1rem 0 0;
+            width: 30rem;
+        }
+        .card-1 p{
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .card-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1rem;
+            height: auto;
+        }
+        .card-2 img{
+            margin-top: 1rem;
+            width: 15rem;
+            height: 10rem;
+            transform: rotate(-90deg);
+        }
+        .card-2 p {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 1rem;
+            text-align: center;
+        }
+         #mobile-btn{
+             margin-top: 5rem;
+            width: 30rem;
+            padding: 2rem 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .mobile-copy {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            display: block;
+        }
     }
