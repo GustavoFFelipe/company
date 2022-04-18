@@ -355,8 +355,8 @@
         #astronaut-mobile {
             display: flex;
             position: absolute;
-            top: 3rem;
-            right:35rem;
+            top: 3%;
+            right:70%;
             width: 12rem;
             height: 15rem;
             animation: mobile-astronaut 30s infinite linear;
