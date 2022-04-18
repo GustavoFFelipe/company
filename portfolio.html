@@ -37,80 +37,73 @@
     </main>
 
     <section id="section-home">
-        <img class="comet" src="/assets/images/animation-comet.png" alt="">
 
-        <div class="container">
-            
-            <div class="midia">
-                <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram.png" alt=""></a>
-                <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin.png" alt=""></a>
-                <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
+        <div id="container">
+            <div id="midia">
+                   <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram.png" alt=""></a>
+                   <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook.png" alt=""></a>
+                   <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin.png" alt=""></a>
+                   <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
             </div>
             <div id="nav-bottom">
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/portfolio.html">Projects</a>
-                <a href="/contact.html">Contact</a>
+                   <a href="/index.html">Home</a>
+                   <a href="/about.html">About</a>
+                   <a href="/portfolio.html">Projects</a>
+                   <a href="/contact.html">Contact</a>
             </div>
-            <div id="contato">
-                <div id="number-contact">
-                <img src="../assets/images/whats.png" alt="">
-                    <h2>+55 (32) 99853-8236</h2>
-                </div>
-            <!---------------Pop Up btn -------------->
-            <button id="popup-contact">Sub-space massage</button>
+            <div id="contact">
+               <div id="number-contact">
+                   <img src="../assets/images/whats.png" alt="">
+                   <h2>+55 (32) 99853-8236</h2>
+               </div>
+               <!---------------Pop Up btn -------------->
+               <button id="popup-contact">Sub-space massage</button>
             </div>
-           
         </div>
         <footer class="copy">
-            <h4>&copy; All the rights reserved. 2021-2022</h4>
-        </footer>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path class="wave wave3" fill="#0ce2f1" fill-opacity="1" d="M0,64L48,53.3C96,43,192,21,288,42.7C384,64,480,128,576,149.3C672,171,768,149,864,144C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+           <h4>&copy; All the rights reserved. 2021-2022</h4>
+       </footer>
+          
+           
+       </section>
        
-        <!---------Scroll btn------------->
-        <button id="btn-up" onClick="">
-            <img src="../assets/images/up-arrow.png" alt="">
-        </button>
-    </section>
-    
-                <!--Pop up Container-->
-    <div id="pop-container" class="pop-up ">
-        <div class="modal">
-            <button id="popup-close">X</button>
-            <h3 class='subtitle'>Enter in contact</h3>
-            <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
-
-                <label for="name">Name</label>
-                <input type="text" name="name" id="" Placeholder="Name" required="true">
-
-                <label for="last-name">Last name</label>
-                <input type="text" name="last-name" id="" placeholder="Last name" required="true">
-
-                <label for="whats">Phone</label>
-                <input type="number" name="whats" id="" placeholder="Your bestnumber-phone">
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id=""placeholder="yourbest@email.com" required="true">
-
-                <label for="massege">Your massage</label>
-                <textarea name="message" id="" cols="60" rows="5"></textarea>
-
-                <!--Auto Anwser-->
-                <input type="hidden" name="_autoresponse" value="Thanks for contact us!
-                we'll answer you as soon as possible.
-                Anansi team.">
-               <!--Mydomain--> 
-               <input type="hidden" name="_next" value="https://gustavofelipe.netlify.app/thanks.html">
-                <input id="pop-btn" type="submit" value="Send">
-            </form>
-        </div>
-    </div>
-    <script src="/src/script.js"></script>
-
-
+                   <!--Pop up Container-->
+        <div id="popup-container" class="pop-up">
+           <div class="modal-index">
+               <button id="popup-close">X</button>
+               <h3 class='subtitle'>Enter in contact</h3>
+               <form id="popup-form" action="https://formsubmit.co/gustavo.ffelipedev@gmail.com" method="POST">
+   
+                   <label for="name">Name</label>
+                   <input type="text" name="name" id="" Placeholder="Name" required="true">
+   
+                   <label for="last-name">Last name</label>
+                   <input type="text" name="last-name" id="" placeholder="Last name" required="true">
+   
+                   <label for="whats">Phone</label>
+                   <input type="number" name="whats" id="" placeholder="Your best number-phone">
+   
+                   <label for="email">Email</label>
+                   <input type="email" name="email" id=""placeholder="yourbest@email.com" required="true">
+   
+                   <label for="massege">Your massege</label>
+                   <textarea name="message" id="" cols="60" rows="5"></textarea>
+   
+                   <!--Auto Anwser-->
+                   <input type="hidden" name="_autoresponse" value="Thanks for contact us!
+                   we'll answer you as soon as possible.
+                   Anansi team.">
+                  <!--Mydomain--> 
+                  <input type="hidden" name="_next" value="https://gustavofelipe.netlify.app/thanks.html">
+                   <input id="pop-btn" type="submit" value="Send">
+               </form>
+           </div>
+       </div>
+   
+       
+      
+       <!--Scripts-->
+       <script src="/src/script.js"></script>
 
           
 </body>

@@ -4,6 +4,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 auto;
+    }
+    header{
+        display: flex;
+        justify-content: center;
     }
 
     #nav-bar {
@@ -16,6 +21,7 @@
         width: 100%;
         margin: 0 auto;
         justify-content: space-evenly;
+        z-index: -100;
     }
     .button-right a img,
     .button-left a img{
@@ -88,32 +94,34 @@
       
       }
 
-      /*------- Comet ------------*/
-
-      .comet {
-        width:100rem;
-        height: 80rem;
-    }
-    .waves{
-        z-index: -50;
-        height: 50vh;
-      }
-
       /***----Mobile-------*/
-    #mobile-nav{
+    #mobile-nav,
+    #mobile-content{
         display: none;
     }
 
 }
+@media (max-width: 1024px){
+    .home-planets img{
+        width: 24rem;
+        height: 32rem;
+        margin-top: 5rem;
+    }
+    .button-left,
+    .button-right {
+        margin: 0 7rem;
+    }
 
+}
 @media (max-width: 800px){
-   html{
-    max-width: 800px;
-    max-height: 1024px;
+      body{
+       margin: 0 auto;
    }
     #nav-bar{
-        width: 400px;
+        width: 80%;
         font-size: 2rem;
+        margin:0 auto;
+
     }
     #nav-bar .left,
     #nav-bar .right,
@@ -189,20 +197,14 @@
           font-size: 2rem;
           margin: 1rem;
       }
-      /*---- Comet --------*/
-
-      .comet{
-          width:50rem;
-          height: 40rem;
-      }
-
       /*----- Bottom nav-bar --------*/
 
       .container {
           width: 100%;
+          margin: 0;
       }
 
-      .grid-1 a img{
+      #midia a img{
         width: 4rem;
         height:4rem;
       }
@@ -222,11 +224,12 @@
           margin-bottom: 1rem;
       }
 
-      .popup-contact{
+      #popup-contact{
         padding: 1rem;
         margin-bottom: 10rem;
       }
-      #mobile-nav{
+      #mobile-nav,
+      #mobile-content{
         display: none;
     }
 
@@ -240,17 +243,17 @@
         overflow-x: hidden;
         height: auto;
         box-sizing: border-box;
+
     }
-        #main-container {
-            animation: none;
-        }
+       
     
         #nav-bar,
         #alien-ship,
         #robot,
         .button-left,
         .button-right,
-        .home-planets
+        .home-planets,
+        #contact
         {
             display: none;
         }
@@ -304,6 +307,14 @@
             font-size: 3rem;
             font-weight: bold;
         }
+
+        #midia-mobile{
+            display: flex;
+            margin-top: 3rem;
+        }
+        #midia-mobile img{
+            width: 3rem;
+        }
         /*-----Main container ----------*/
     
         #mobile-content{
@@ -344,10 +355,10 @@
         #astronaut-mobile {
             display: flex;
             position: absolute;
-            top: 5rem;
-            right: 20rem;
-            width: 32rem;
-            height: 30rem;
+            top: 3rem;
+            right:30rem;
+            width: 12rem;
+            height: 15rem;
             animation: mobile-astronaut 30s infinite linear;
             z-index: -1000;
         }
@@ -361,8 +372,8 @@
                     left: 0;
                     bottom: 0;
     
-                    width: 103%;
-                    height: 103%;
+                    width: 100%;
+                    height: 100%;
     
                     background-color: black;
     
@@ -402,8 +413,8 @@
             color:#fff;
             margin-left: 1rem;
             font-weight: bold;
-            font-size: 2.5rem;
-            line-height: 10rem;
+            font-size: 1.6rem;
+            line-height: 5rem;
             text-decoration: none;
         }
         #menu-mobile.on .menu  a:visited {
@@ -416,7 +427,7 @@
         }
         
         #about-link {
-            margin-top: 70rem;
+            margin-top: 20rem;
         }
 
        #card-container {
@@ -478,17 +489,26 @@
             margin-top: 1rem;
             text-align: center;
         }
-         #mobile-btn{
-             margin-top: 5rem;
-            width: 30rem;
-            padding: 2rem 0;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
         .mobile-copy {
-            font-size: 2rem;
+            font-size: 1.3rem;
             font-weight: bold;
             color: #fff;
             display: block;
+        }
+        #btn-link {
+            width: 80%;
+            text-align: center;
+        }
+        #mobile-btn {
+            margin: 5rem auto;
+            font-size: 2rem;;
+            font-weight: bold;
+            padding: 2rem 2rem;
+            width: 80%;
+            background-color: #000;
+            color: #fff;
+            border-radius: 1.5rem;
+            border: 2px solid #fff;
+            animation: jello 3s ease-in-out infinite;
         }
     }

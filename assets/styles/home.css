@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    animation: float-side 7s ease-in-out infinite;
+    height: auto;
+    animation: float-side 5s ease-in-out infinite;
 
 }
 .button-right a,
@@ -30,7 +30,7 @@
     margin-right: 2rem;
 }
 .button-left{
-    margin-left: -8rem;
+    margin-left: 1rem;
     position: relative;
     z-index: 100;
 }
@@ -149,5 +149,3 @@
 
 
 
-
-  
