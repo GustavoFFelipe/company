@@ -1,6 +1,9 @@
 @media (min-width:1754px) {
     body {
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #nav-bar {
@@ -10,7 +13,7 @@
     }
     /*--------Main container---------*/
     #main-container{
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
         justify-content: space-evenly;
     }
@@ -104,6 +107,10 @@
 }
 
 @media (max-width: 800px){
+   html{
+    max-width: 800px;
+    max-height: 1024px;
+   }
     #nav-bar{
         width: 400px;
         font-size: 2rem;
@@ -227,15 +234,12 @@
 
 @media (max-width: 500px){
     /*----Without display for mobile -----*/
-    html{
-        width: 500px;
-    }
+  
     body{
-        width: 500px;
+        width: 100vw;
         overflow-x: hidden;
         height: auto;
         box-sizing: border-box;
-        max-width: 500px;
     }
         #main-container {
             animation: none;
@@ -254,8 +258,8 @@
         #mobile-nav{
             display: flex;
             width: 90%;
-            height: 5rem;
-            align-items: center;
+            height: 7rem;
+            align-items: flex-end;
             margin: auto;
             justify-content: space-between;
             
@@ -296,12 +300,18 @@
         .three{
             width: 100%
         }
-    
+        #logo{
+            font-size: 3rem;
+            font-weight: bold;
+        }
         /*-----Main container ----------*/
     
-        #main-container{
+        #mobile-content{
             display: flex;
             justify-content: center; 
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
            
         }
         #mobile-text {
@@ -314,6 +324,7 @@
             animation: tilt 2s ;
             position: relative;
             display:block;
+            margin: 5rem auto 2.5rem auto;
         }
         #mobile-text p {
             color: #fff;
@@ -334,7 +345,7 @@
             height: 30rem;
             position: absolute;
             top: 8rem;
-            right: -5rem;
+            right: -20rem;
             display:block;
             z-index: -100;
     
@@ -347,9 +358,11 @@
             position: absolute;
                     top: 0;
                     right: 0;
+                    left: 0;
+                    bottom: 0;
     
-                    width: 100%;
-                    height: 100vh;
+                    width: 103%;
+                    height: 103%;
     
                     background-color: black;
     
@@ -369,7 +382,7 @@
         #menu-mobile .menu-toggle {
             position: absolute;
             top: 10px;
-            right: 15px;
+            right: 10px;
         }
         #menu-mobile.on .menu-toggle .one{
             transform: rotate(45deg) translate(4px, 6px);
@@ -397,7 +410,27 @@
             margin-left: 6rem;
             transition: .5s;
         }
-    
-    
+
+        #section-home{
+            display: none;
+        }
+
+       #card-container {
+            width: 100%;
+            height: 30vh;
+
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: none;
+            width:80vw;
+            height: auto;
+            animation: tilt 2s ;
+            position: relative;
+            display:block;
+            margin: 2.5rem auto;
+        }
       
     }

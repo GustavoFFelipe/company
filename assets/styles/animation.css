@@ -298,16 +298,16 @@
 
   0%{
     
-    transform:translateX(20px) rotate(0deg);
+    transform:translateX(50px) rotate(0deg);
 
   }
 
   50%{
-    transform:translatex(-500px) rotate(-1075deg);
+    transform:translatex(-800px) rotate(-1075deg);
 
   }
   100% {
-    transform:translateX(20px) rotate(0deg);
+    transform:translateX(50px) rotate(0deg);
 
   }
 }
