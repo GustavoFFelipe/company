@@ -84,9 +84,10 @@ main {
  .space-base img {
      position: absolute;
      left: -19%;
-     top: 75%;
+     top: 95%;
      width: 75rem;
      height: 60rem;
+     z-index: -1000;
      animation: float-background 7s ease-in-out infinite;
  }
 
@@ -98,6 +99,48 @@ main {
     height: 25rem;
     animation: astronaut 160s infinite;
 }
+.copy-mobile,
+.space-base-mobile {
+  
+  display: none;
+}
 
+/*----------- Responsive -------------*/
+@media (max-width: 500px){
 
+  .astronaut img{
+    display: none;
+  }
 
+  #weirdtext {
+    font-size: 2.5rem;
+  }
+
+  section h2{
+    font-size: 2rem;
+    margin: 2rem auto;
+  }
+  .text {
+    font-size: 1.5rem;;
+  }
+
+  .space-base img{
+    display: none;
+  }
+
+  .copy-mobile{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .space-base-mobile {
+    display: flex;
+    width: 20rem;
+    height: 35rem;
+    justify-content:center;
+    animation: float 8s infinite;
+
+  }
+}

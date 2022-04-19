@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/assets/styles/global.css">
     <link rel="stylesheet" href="/assets/styles/about.css">
     <link rel="stylesheet" href="/assets/styles/animation.css">
+    <link rel="stylesheet" href="/assets/styles/responsive.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +24,45 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <a href="/index.html"class="left">Home</a>
-        <a href="/portfolio.html"class="central">Projects</a>
-        <a href="/about.html"class="central">About</a>
-        <a href="/contact.html"class="right">Contact</a>
-    </nav>
+    <header>
+        <!-- Nav-bar from mobile-->
+        <div id="mobile-nav">
+            <h2 id="logo">Anansi</h2>
+            <div id="menu-mobile" >
+
+
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <div class="menu">
+                        <a href="/index.html"class="left">Home</a>
+                        <a href="/portfolio.html"class="central">Projects</a>
+                        <a href="/about.html"class="central">About</a>
+                        <a href="/contact.html"class="right">Contact</a>
+                        
+                        <div id="midia-mobile" >
+                            <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram-mobile.png" alt=""></a>
+                            <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook-mobile.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin-mobile.png" alt=""></a>
+                            <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github-mobile.png" alt=""></a>
+                     </div>
+    
+                    </div>
+            
+    
+            </div>
+        </div>
+                <!-- Nav-bar from Desktop-->
+
+        <nav id="nav-bar">
+            <a href="/index.html"class="left">Home</a>
+            <a href="/portfolio.html"class="central">Projects</a>
+            <a href="/about.html"class="central">About</a>
+            <a href="/contact.html"class="right">Contact</a>
+        </nav>
+    </header>
 
     <main>
 
@@ -58,39 +92,44 @@
            <div class=" astronaut">
                <img src="/assets/images/astronaut.png" alt="">
            </div>
-
+           <div class="space-base-mobile">
+            <img src="/assets/images/space-base-mobile.png" alt="">
+        </div>
+           <footer class="copy-mobile">
+            <h4>&copy; All the rights reserved. 2021-2022</h4>
+        </footer>
     </main>
 
-    <section id="section-home">
+        <section id="section-home">
 
-        <div id="container">
-            <div id="midia">
-                   <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram.png" alt=""></a>
-                   <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook.png" alt=""></a>
-                   <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin.png" alt=""></a>
-                   <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
+            <div id="container">
+                <div id="midia">
+                    <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
+                </div>
+                <div id="nav-bottom">
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/portfolio.html">Projects</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div id="contact">
+                <div id="number-contact">
+                    <img src="../assets/images/whats.png" alt="">
+                    <h2>+55 (32) 99853-8236</h2>
+                </div>
+                <!---------------Pop Up btn -------------->
+                <button id="popup-contact">Sub-space massage</button>
+                </div>
             </div>
-            <div id="nav-bottom">
-                   <a href="/index.html">Home</a>
-                   <a href="/about.html">About</a>
-                   <a href="/portfolio.html">Projects</a>
-                   <a href="/contact.html">Contact</a>
-            </div>
-            <div id="contact">
-               <div id="number-contact">
-                   <img src="../assets/images/whats.png" alt="">
-                   <h2>+55 (32) 99853-8236</h2>
-               </div>
-               <!---------------Pop Up btn -------------->
-               <button id="popup-contact">Sub-space massage</button>
-            </div>
-        </div>
-        <footer class="copy">
-           <h4>&copy; All the rights reserved. 2021-2022</h4>
-       </footer>
-          
-           
-       </section>
+            <footer class="copy">
+                <h4>&copy; All the rights reserved. 2021-2022</h4>
+            </footer>
+            
+            
+        </section>
        
                    <!--Pop up Container-->
         <div id="popup-container" class="pop-up">
