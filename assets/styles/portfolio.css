@@ -1,0 +1,30 @@
+
+#mobile-container{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        width: 100%;
+        
+        margin: 0 auto;
+    }
+    #mobile-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .mobile-copy {
+        display: flex;
+    }
+    .mobile-copy h4 {
+        margin: 0 auto;
+    }
+   
+}

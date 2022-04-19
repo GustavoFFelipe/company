@@ -84,19 +84,19 @@ main {
  .space-base img {
      position: absolute;
      left: -19%;
-     top: 95%;
+     top: 75%;
      width: 75rem;
-     height: 60rem;
+     height: 50rem;
      z-index: -1000;
      animation: float-background 7s ease-in-out infinite;
  }
 
  .astronaut img {
     position: absolute;
-    right: -5%;
+    right: 5%;
     top: 10%;
-    width: 35rem;
-    height: 25rem;
+    width: 15rem;
+    height: 15rem;
     animation: astronaut 160s infinite;
 }
 .copy-mobile,
@@ -108,6 +108,7 @@ main {
 /*----------- Responsive -------------*/
 @media (max-width: 500px){
 
+ 
   .astronaut img{
     display: none;
   }
