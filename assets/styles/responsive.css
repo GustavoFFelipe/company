@@ -12,9 +12,11 @@
     }
 
     #nav-bar {
-        width: 1000px;
+        width: 1500px;
         padding: 1rem 0;
-        font-size:5rem;
+    }
+    #nav-bar a {
+        font-size: 5rem;;
     }
     /*--------Main container---------*/
     #main-container{
@@ -22,6 +24,8 @@
         margin: 0 auto;
         justify-content: space-evenly;
         z-index: -100;
+        margin-top: 30rem;
+
     }
     .button-right a img,
     .button-left a img{
@@ -31,10 +35,22 @@
 
     .home-planets img{
         margin-top: 10rem;
-        width: 36rem;
-        height: 45rem;
     }
-
+    #about img{
+        width: 70rem;
+        height: 80rem;
+    }
+    #contact img{
+        width: 50rem;
+        height: 60rem;
+    }
+    #portfolio img{
+        width: 50rem;
+        height: 60rem;
+    }
+    #robot {
+        bottom: -30rem;
+    }
     #robot img{
         width: 50rem;
         height:52rem;
@@ -43,7 +59,7 @@
     }
 
     #alien-ship{
-        top: -20px;
+        top: -50rem;
 
     }
 
@@ -52,6 +68,7 @@
         height: 54rem;
         z-index: -100;
     }
+    
 
     /*----------Button Pop-up --------*/
 
@@ -93,6 +110,36 @@
         right: -20px;
       
       }
+      #section-home{
+          height: auto;
+      }
+
+      #midia img{
+          width: 9rem;
+          height: 9rem;
+      }
+
+      #nav-bottom a {
+          font-size: 4rem;
+      }
+     
+
+      #number-contact img{
+          width: 9rem;
+          height: 9rem;
+          animation: float 7s ease-in-out infinite;
+      }
+      #number-contact h2{
+          font-size: 4rem;
+      }
+      #popup-contact {
+          font-size: 3rem;
+          padding: 2.5rem 5rem;
+          border-radius: 2rem;
+          margin-right: 13rem;
+
+      }
+
 
       /***----Mobile-------*/
     #mobile-nav,
@@ -115,8 +162,10 @@
 }
 @media (max-width: 800px){
       body{
-       margin: 0 auto;
+        width: 103%;
    }
+
+   /*------ Nav-bar ----*/
     #nav-bar{
         width: 80%;
         font-size: 2rem;
@@ -159,6 +208,17 @@
         right: -40px;
         top: -15px;
     }
+    /*---- Main Content ------------*/
+
+    #contact img {
+        width: 15rem;
+        height: 21rem;
+    }
+
+    #about img {
+        width: 20rem;
+        height: 31rem;
+    }
 
     /*--------- Button Pop-up-----------*/
 
@@ -198,10 +258,12 @@
           margin: 1rem;
       }
       /*----- Bottom nav-bar --------*/
-
-      .container {
+      #section-home {
           width: 100%;
-          margin: 0;
+      }
+      #container {
+          width: 100%;
+          margin: 0 auto;
       }
 
       #midia a img{
@@ -457,7 +519,7 @@
         .card-1 img {
             border: none;
             border-radius: 1rem 1rem 0 0;
-            width: 30rem;
+            width: 100%;
         }
         .card-1 p{
             color: #fff;
@@ -472,7 +534,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-top: 1rem;
+            margin-top: 2rem;
             height: auto;
         }
         .card-2 img{
@@ -512,7 +574,5 @@
             animation: jello 3s ease-in-out infinite;
         }
 
-
-        /*------------ About page ------------*/
 
     }
