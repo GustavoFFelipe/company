@@ -141,6 +141,7 @@
       }
 
 
+     
       /***----Mobile-------*/
     #mobile-nav,
     #mobile-content{
@@ -574,5 +575,5 @@
             animation: jello 3s ease-in-out infinite;
         }
 
-
+        
     }

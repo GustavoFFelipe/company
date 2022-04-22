@@ -290,6 +290,17 @@
   }
 }
 
+/*----- Rocket Fly Portfolio page ----------*/
+
+@keyframes fly-rocket {
+  0% { 
+    transform: translate3d(10px, 10px, 10px);
+  }
+  100% {
+    transform: translate3d(1200px, -4200px, 0);
+
+  }
+}
 
 /*------- Mobile astro ----------*/
 

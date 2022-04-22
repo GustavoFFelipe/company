@@ -1,8 +1,187 @@
 
+body{
+    width: 100%;
+}
+ main{
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+
+ }
+#projects {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 10rem auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#projects a{
+    width: 30%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: 2rem;
+    opacity:.3;
+
+
+}
+.card:hover {
+    background-color: rgb(194, 193, 193);
+    color: #000;
+    transition: 1s;
+   /* transform: translate3d(10px, 10px, 50px);*/
+   transform: translateY(-20px);
+    opacity: 1;
+}
+.card img{
+    width: 90%;
+    border-radius: 3rem 3rem 0 0;
+    margin: 2rem auto 2rem auto;
+}
+
+.card p{
+    width: 100%;
+    margin: 2rem auto 1rem auto;
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    text-align: center ;
+}
+
+#fly-rocket{
+    width: 30rem;
+    height: 30rem;
+    z-index: -100;
+    position: absolute;
+    bottom: -1000px;
+    opacity: 0.7;
+    left:20%;
+    animation: fly-rocket 15s infinite;
+}
+
+
 #mobile-container{
     display: none;
 }
+@media (min-width:1780px){
+   
+    #projects a{
+        width:120%;
+        margin: 0 5rem;
+    }
+    .card p {
+        font-size: 4rem;
+        padding: 2rem 0;
+        line-height: 1.2;
+    }
+}
+@media(max-width:1753px){
+    #nav-bar{
+        width: 60%;
+    }
+    #nav-bar a{
+        font-size: 3rem;
+    }
 
+}
+@media(max-width: 1440px){
+    body{
+        width: 100%;
+    }
+    #nav-bar a{
+        font-size: 2rem;
+    }
+    .card img{
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+}
+@media(max-width:910px){
+    #nav-bar a{
+        font-size: 1.6rem;
+    }
+   
+    #nav-bottom a{
+        font-size: 1.6rem;
+    }
+    .card{
+        padding: .4rem 0;
+        margin-bottom: 20rem;
+    }
+    .card img{
+        width:15rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        margin: 1rem auto;
+
+    }
+    .card p{
+        padding: 0 1rem;
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+
+}
+@media (max-width: 680px) {
+    #nav-bootom{
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+    }
+    #midia a {
+        margin: 0 1rem;
+    }
+    .card{
+        padding: .4rem 0;
+        margin-bottom: 20rem;
+    }
+    .card img{
+        width: 13rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        margin: 1rem auto;
+
+    }
+    .card p{
+        padding: 0 1rem;
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+}
+@media (max-width: 550px){
+    .card{
+        padding: .4rem 0;
+        margin-bottom: 20rem;
+    }
+    .card img{
+        width: 13rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        margin: 1rem auto;
+
+    }
+    .card p{
+        padding: 0 1rem;
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    #container #nav-bootom a{
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+    #bottom-contact #number-contact h2{
+        font-size: 1.4rem;
+    }
+    #popup-contact {
+        font-size: 1.4rem;
+    }
+}
 @media (max-width: 500px) {
     main {
         display: flex;
@@ -12,12 +191,28 @@
         
         margin: 0 auto;
     }
+    .project-card {
+        opacity: 1;
+        padding:0;
+    }
+    .project-card img{
+        width: 95%;
+        height: 20rem;
+        margin: 0 auto 1rem .7rem;
+        }
     #mobile-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 60rem;
+        opacity: 1;
+
         
+    }
+    .card-container{
+        display: flex;
+        justify-content: center;
     }
 
     .mobile-copy {
@@ -27,4 +222,8 @@
         margin: 0 auto;
     }
    
+    #projects,
+    #fly-rocket  {
+        display: none;
+    }
 }

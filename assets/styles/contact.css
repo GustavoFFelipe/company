@@ -103,6 +103,40 @@ main {
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
   }
 
+  @media (min-width: 1768px){
+       /*-------- Contact Page --------*/
+
+       #container-contact {
+        height: 150rem;
+        margin-top: 20rem;
+        width: 80%;
+    }
+    .contact-title {
+        font-size: 5rem;
+        margin-top: 8rem;
+    }
+    #form label {
+        font-size: 4rem;
+    }
+    #form input {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    #form textarea {
+        padding: 10rem;
+    }
+
+    #form #btn-send {
+        font-size: 5rem;
+        font-weight: bold;
+        padding: 3rem;
+    }
+
+
+    footer h4{
+        font-size: 3rem;
+    }
+  }
 
   /*------ Mobile --------*/
 
