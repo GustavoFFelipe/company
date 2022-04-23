@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/assets/styles/global.css">
     <link rel="stylesheet" href="/assets/styles/about.css">
     <link rel="stylesheet" href="/assets/styles/thanks.css">
+    <link rel="stylesheet" href="/assets/styles/responsive.css">
 
     <link rel="stylesheet" href="/assets/styles/animation.css">
 
@@ -25,12 +26,45 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <a href="/index.html"class="left">Home</a>
-        <a href="/portfolio.html"class="central">Projects</a>
-        <a href="/about.html"class="central">About</a>
-        <a href="/contact.html"class="right">Contact</a>
-    </nav>
+    <header>
+        <!-- Nav-bar from mobile-->
+        <div id="mobile-nav">
+            <a href="/index.html"> <h2 id="logo">Anansi</h2></a>
+            <div id="menu-mobile" >
+
+
+                    <div class="menu-toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                    <div class="menu">
+                        <a href="/index.html"class="left">Home</a>
+                        <a href="/portfolio.html"class="central">Projects</a>
+                        <a href="/about.html"class="central">About</a>
+                        <a href="/contact.html"class="right">Contact</a>
+                        
+                        <div id="midia-mobile" >
+                            <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram-mobile.png" alt=""></a>
+                            <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook-mobile.png" alt=""></a>
+                            <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin-mobile.png" alt=""></a>
+                            <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github-mobile.png" alt=""></a>
+                     </div>
+    
+                    </div>
+            
+    
+            </div>
+        </div>
+                <!-- Nav-bar from Desktop-->
+
+        <nav id="nav-bar">
+            <a href="/index.html"class="left">Home</a>
+            <a href="/portfolio.html"class="central">Projects</a>
+            <a href="/about.html"class="central">About</a>
+            <a href="/contact.html"class="right">Contact</a>
+        </nav>
+    </header>
 
     <main>
 
@@ -67,47 +101,40 @@
     </main>
 
     <section id="section-home">
-        <img class="comet" src="/assets/images/animation-comet.png" alt="">
 
-        <div class="container">
-            
-            <div class="midia">
-                <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram.png" alt=""></a>
-                <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin.png" alt=""></a>
-                <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
+        <div id="container">
+            <div id="midia">
+                   <a href="https://www.instagram.com/gu.ffelipe/"><img src="../assets/images/instagram.png" alt=""></a>
+                   <a href="https://www.facebook.com/gu.ffelipe19"><img src="../assets/images/facebook.png" alt=""></a>
+                   <a href="https://www.linkedin.com/in/gustavoffelipe/"><img src="../assets/images/linkedin.png" alt=""></a>
+                   <a href="https://github.com/GustavoFFelipe"><img src="../assets/images/github.png" alt=""></a>
             </div>
             <div id="nav-bottom">
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/portfolio.html">Projects</a>
-                <a href="/contact.html">Contact</a>
+                   <a href="/index.html">Home</a>
+                   <a href="/about.html">About</a>
+                   <a href="/portfolio.html">Projects</a>
+                   <a href="/contact.html">Contact</a>
             </div>
-            <div id="contato">
-                <div id="number-contact">
-                <img src="../assets/images/whats.png" alt="">
-                    <h2>+55 (32) 99853-8236</h2>
-                </div>
-            <!---------------Pop Up btn -------------->
-            <button id="popup-contact">Sub-space massage</button>
+            <div id="bottom-contact">
+               <div id="number-contact">
+                   <img src="../assets/images/whats.png" alt="">
+                   <h2>+55 (32) 99853-8236</h2>
+               </div>
+               <!---------------Pop Up btn -------------->
+               <button id="popup-contact">Sub-space massage</button>
             </div>
-
-
-           
         </div>
         <footer class="copy">
-            <h4>&copy; All the rights reserved. 2021-2022</h4>
-        </footer>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path class="wave wave3" fill="#0ce2f1" fill-opacity="1" d="M0,64L48,53.3C96,43,192,21,288,42.7C384,64,480,128,576,149.3C672,171,768,149,864,144C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+           <h4>&copy; All the rights reserved. 2021-2022</h4>
+       </footer>
+          
+           
+       </section>
+       <footer class="copy-mobile">
+        <h4>&copy; All the rights reserved. 2021-2022</h4>
+    </footer>
+
        
-        <!---------Scroll btn------------->
-        <button id="btn-up" onClick="">
-            <img src="../assets/images/up-arrow.png" alt="">
-        </button>
-    </section>
-    
                 <!--Pop up Container-->
     <div id="pop-container" class="pop-up ">
         <div class="modal">
