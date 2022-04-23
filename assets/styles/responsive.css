@@ -59,14 +59,15 @@
     }
 
     #alien-ship{
-        top: -50rem;
+        top: -25%;
+        right: 10%;
 
     }
 
     #alien-ship img{
-        width: 58rem;
-        height: 54rem;
-        z-index: -100;
+            width: 28rem;
+            height: 24rem;
+            z-index: -100;
     }
     
 
@@ -200,14 +201,16 @@
         bottom: -30px;
     }
 
-    #alien-ship img{
-        width: 24rem;
-        height: 20rem;
-        z-index: -100;
-    }
     #alien-ship{
-        right: -40px;
-        top: -15px;
+        top: 5%;
+        right: 5%;
+
+    }
+
+    #alien-ship img{
+            width: 12rem;
+            height: 10rem;
+            z-index: -100;
     }
     /*---- Main Content ------------*/
 

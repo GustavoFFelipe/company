@@ -82,15 +82,15 @@
 
 #alien-ship {
     position: absolute;
-    right: 30px;
-    top: -100px;
+    right: 40px;
+    top: 30px;
     z-index: -100;
     animation: pulse 6s ease-in-out infinite;
 
 }
 #alien-ship img{
-    width: 38rem;
-    height: 34rem;
+    width: 18rem;
+    height: 14rem;
     z-index: -100;
 }
 /*------- Button Pop-Up-----------------*/
