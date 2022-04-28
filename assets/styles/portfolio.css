@@ -57,6 +57,14 @@ body{
     font-weight: bold;
     text-align: center ;
 }
+.card #card-2{
+    width: 95%;
+    height: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin: 1rem auto;
+    margin: 3rem 0
+
+}
 
 #fly-rocket{
     width: 30rem;
@@ -84,6 +92,7 @@ body{
         padding: 2rem 0;
         line-height: 1.2;
     }
+   
 }
 @media(max-width:1753px){
     #nav-bar{
@@ -104,6 +113,7 @@ body{
     .card img{
         border-radius: 1.5rem 1.5rem 0 0;
     }
+    
 }
 @media(max-width:910px){
     #nav-bar a{
@@ -128,6 +138,8 @@ body{
         font-size: 1.6rem;
         margin-top: 0;
     }
+    
+    
 
 }
 @media (max-width: 680px) {
